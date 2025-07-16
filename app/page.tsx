@@ -228,7 +228,7 @@ function PortfolioContent() {
               <div className="relative">
                 <div className="w-80 h-80 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 dark:from-blue-500 dark:to-blue-700 p-1">
                   <img
-                    src="./picture.png"
+                    src="/Portfolio-Website/picture.png"
                     alt="Reynear Douglas"
                     className="w-full h-full rounded-full object-cover bg-white dark:bg-slate-800"
                   />
