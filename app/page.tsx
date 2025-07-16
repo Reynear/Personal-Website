@@ -65,6 +65,7 @@ function PortfolioContent() {
         "A comprehensive system for managing student records and academic performance built with Java and MySQL.",
       technologies: ["Java", "MySQL", "JavaFX"],
       status: "In Progress",
+      repo: "#" // No repo provided
     },
     {
       title: "Circuit Simulator",
@@ -72,18 +73,21 @@ function PortfolioContent() {
         "Digital circuit simulation tool for educational purposes, featuring logic gates and timing analysis.",
       technologies: ["Python", "Tkinter", "Digital Logic"],
       status: "In Progress",
+      repo: "https://github.com/Reynear/Circuit-Simulator"
     },
     {
       title: "Data Structures Visualizer",
       description: "Interactive web application to visualize common data structures and algorithms for learning.",
       technologies: ["JavaScript", "HTML5", "CSS3"],
       status: "In Progress",
+      repo: "#" // No repo provided
     },
     {
       title: "PyQt Preview",
       description: "Python project using the PyQt framework that provides tools, utilities, or examples for previewing and demonstrating graphical user interface (GUI) components, layouts, and features in PyQt applications.",
       technologies: ["Python","Pyqt"],
       status: "Completed",
+      repo: "https://github.com/Reynear/pyqt-preview"
     },
   ]
 
@@ -224,7 +228,7 @@ function PortfolioContent() {
               <div className="relative">
                 <div className="w-80 h-80 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 dark:from-blue-500 dark:to-blue-700 p-1">
                   <img
-                    src="/placeholder.svg?height=320&width=320"
+                    src="/picture.png"
                     alt="Reynear Douglas"
                     className="w-full h-full rounded-full object-cover bg-white dark:bg-slate-800"
                   />
@@ -371,13 +375,15 @@ function PortfolioContent() {
                         </Badge>
                       ))}
                     </div>
-                    <Button
-                      variant="outline"
-                      className="w-full group-hover:bg-blue-50 dark:group-hover:bg-blue-900/20 group-hover:border-blue-600 dark:group-hover:border-blue-400 bg-transparent border-slate-300 dark:border-slate-600 text-slate-600 dark:text-slate-300"
+                    <a
+                      href={project.repo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full inline-flex items-center justify-center group-hover:bg-blue-50 dark:group-hover:bg-blue-900/20 group-hover:border-blue-600 dark:group-hover:border-blue-400 bg-transparent border-slate-300 dark:border-slate-600 text-slate-600 dark:text-slate-300 border rounded-md px-4 py-2 text-sm font-medium transition-colors"
                     >
                       <ExternalLink className="w-4 h-4 mr-2" />
                       View Details
-                    </Button>
+                    </a>
                   </div>
                 </CardContent>
               </Card>
@@ -573,7 +579,7 @@ function PortfolioContent() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-slate-800 dark:text-white">Location</h4>
-                    <p className="text-slate-600 dark:text-slate-300">Jsmaica</p>
+                    <p className="text-slate-600 dark:text-slate-300">Jamaica</p>
                   </div>
                 </div>
               </div>
